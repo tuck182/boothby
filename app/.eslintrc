@@ -1,0 +1,90 @@
+{
+  'extends': '../.eslintrc',
+  'parserOptions': {
+    'ecmaVersion': 7,
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      'jsx': true,
+      'experimentalObjectRestSpread': true
+    },
+  },
+  'env': {
+    'browser': true
+  },
+  'plugins': [
+      'react'
+  ],
+  'rules': {
+    ////////////////REACT RULES///////////////////////////////////////////////
+    // Prevent missing displayName in a React component definition
+    'react/display-name': 'warn',
+    // Forbid certain propTypes
+    'react/forbid-prop-types': 'off',
+    // Enforce boolean attributes notation in JSX
+    'react/jsx-boolean-value': 'off',
+    // Validate closing bracket location in JSX
+    'react/jsx-closing-bracket-location': ['error', 'tag-aligned'],
+    // Enforce or disallow spaces inside of curly braces in JSX attributes
+    'react/jsx-curly-spacing': 'off',
+    // Enforce event handler naming conventions in JSX
+    'react/jsx-handler-names': 'warn',
+    // Validate props indentation in JSX
+    'react/jsx-indent-props': ['error', 2],
+    // Validate JSX has key prop when in array or iterator
+    'react/jsx-key': 'error',
+    // Limit maximum of props on a single line in JSX
+    'react/jsx-max-props-per-line': 'off',
+    // Prevent usage of .bind() and arrow functions in JSX props
+    'react/jsx-no-bind': 'off',
+    // Prevent duplicate props in JSX
+    'react/jsx-no-duplicate-props': 'off',
+    // Prevent usage of isMounted
+    'react/no-is-mounted': 'error',
+    // Prevent usage of unwrapped JSX strings
+    'react/jsx-no-literals': 'off',
+    // Disallow undeclared variables in JSX
+    'react/jsx-no-undef': 'error',
+    // Enforce PascalCase for user-defined JSX components
+    'react/jsx-pascal-case': 'error',
+    // Enforce propTypes declarations alphabetical sorting
+    'react/jsx-sort-prop-types': 'off',
+    // Enforce props alphabetical sorting
+    'react/jsx-sort-props': 'off',
+    // Prevent React to be incorrectly marked as unused
+    'react/jsx-uses-react': 'error',
+    // Prevent variables used in JSX to be incorrectly marked as unused
+    'react/jsx-uses-vars': 'error',
+    // Prevent usage of dangerous JSX properties
+    'react/no-danger': 'warn',
+    // Prevent usage of deprecated methods
+    'react/no-deprecated': 'error',
+    // Prevent usage of setState in componentDidMount
+    'react/no-did-mount-set-state': 'error',
+    // Prevent usage of setState in componentDidUpdate
+    'react/no-did-update-set-state': 'error',
+    // Prevent direct mutation of this.state
+    'react/no-direct-mutation-state': 'error',
+    // Prevent multiple component definition per file
+    'react/no-multi-comp': 'off',
+    // Prevent usage of setState
+    'react/no-set-state': 'warn',
+    // Prevent using string references in ref attribute.
+    'react/no-string-refs': 'off',
+    // Prevent usage of unknown DOM property
+    'react/no-unknown-property': 'error',
+    // Enforce ES5 or ES6 class for React Components
+    'react/prefer-es6-class': 'error',
+    // Prevent missing props validation in a React component definition
+    'react/prop-types': 'error',
+    // Prevent missing React when using JSX
+    'react/react-in-jsx-scope': 'error',
+    // Restrict file extensions that may be required
+    'react/require-extension': 'off',
+    // Prevent extra closing tags for components without children
+    'react/self-closing-comp': 'error',
+    // Enforce component methods order
+    'react/sort-comp': 'off',
+    // Prevent missing parentheses around multilines JSX
+    'react/jsx-wrap-multilines': 'error'
+    }
+}
