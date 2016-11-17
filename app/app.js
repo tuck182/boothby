@@ -1,9 +1,16 @@
 /* global document */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
+import { Provider } from 'react-redux';
+import Boothby from './components/Boothby';
 
-ReactDOM.render(
-  React.createElement('h1', null, 'Hello, world!'),
+import configureStore from './store/configureStore';
+const store = configureStore();
+
+render(
+  <Provider store={store}>
+    <Boothby />
+  </Provider>,
   document.getElementById('boothby')
 );
