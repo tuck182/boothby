@@ -1,0 +1,20 @@
+{
+  "name": "boothby",
+  "version": "1.0.0",
+  "description": "Cocktail library",
+  "private": true,
+  "engines": {
+    "node": ">=6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tuck182/boothby.git"
+  },
+  "homepage": "https://github.com/tuck182/boothby",
+  "keywords": [
+    "cocktails",
+    "mixology"
+  ],
+  "author": "Matt Tucker <tuck@whistlingfish.net>",
+  "license": "UNLICENSED"
+}
