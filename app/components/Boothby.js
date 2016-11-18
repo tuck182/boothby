@@ -1,15 +1,12 @@
-import React, { Component, PropTypes } from 'react';
-import { bindActionCreators } from 'redux';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class Boothby extends Component {
   static propTypes = {
-    todos: PropTypes.array.isRequired,
-    actions: PropTypes.object.isRequired
   }
 
   render() {
-    const {} = this.props;
+    // const {} = this.props;
     return (
       <div>
         <h1>Hello, world.</h1>
@@ -18,12 +15,12 @@ class Boothby extends Component {
   }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps(_state) {
   return {
   };
 }
 
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps(_dispatch) {
   return {
   };
 }
