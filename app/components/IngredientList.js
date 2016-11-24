@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import Header from 'components/Header';
-import EditRecipe from 'components/EditRecipe';
-import RecipeList from 'components/RecipeList';
-
-class Boothby extends Component {
+class IngredientList extends Component {
   static propTypes = {
   }
 
@@ -13,11 +9,18 @@ class Boothby extends Component {
     // const {} = this.props;
     return (
       <div>
-        <Header />
-        <RecipeList />
+        <label>
+          Ingredients:
+          <input type="text" name="name" />
+        </label>
       </div>
     );
   }
+}
+
+function mapStateToProps(_state) {
+  return {
+  };
 }
 
 function mapDispatchToProps(_dispatch) {
@@ -26,6 +29,6 @@ function mapDispatchToProps(_dispatch) {
 }
 
 export default connect(
-  (state) => state,
+  mapStateToProps,
   mapDispatchToProps
-)(Boothby);
+)(IngredientList);

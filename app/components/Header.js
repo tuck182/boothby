@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import Header from 'components/Header';
-import EditRecipe from 'components/EditRecipe';
-import RecipeList from 'components/RecipeList';
-
-class Boothby extends Component {
+class Header extends Component {
   static propTypes = {
   }
 
   render() {
     // const {} = this.props;
     return (
-      <div>
-        <Header />
-        <RecipeList />
-      </div>
+      <ul>
+        <li>Home</li>
+      </ul>
     );
   }
+}
+
+function mapStateToProps(_state) {
+  return {
+  };
 }
 
 function mapDispatchToProps(_dispatch) {
@@ -26,6 +26,6 @@ function mapDispatchToProps(_dispatch) {
 }
 
 export default connect(
-  (state) => state,
+  mapStateToProps,
   mapDispatchToProps
-)(Boothby);
+)(Header);

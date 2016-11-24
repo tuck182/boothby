@@ -19,7 +19,7 @@ let webpackConfig = {
     historyApiFallback: true,
     // hot: true,
     inline: true,
-    port: 3000,
+    port: 3002,
     noInfo: false,
     stats: {
       colors: true,
@@ -28,7 +28,10 @@ let webpackConfig = {
   },
   module: {
     loaders: [
-      // shims
+      {
+        test: /\.json$/,
+        loader: 'json',
+      },
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',

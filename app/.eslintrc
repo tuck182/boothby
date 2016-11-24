@@ -23,7 +23,10 @@
     // Enforce boolean attributes notation in JSX
     'react/jsx-boolean-value': 'off',
     // Validate closing bracket location in JSX
-    'react/jsx-closing-bracket-location': ['error', 'tag-aligned'],
+    'react/jsx-closing-bracket-location': ['error', {
+        selfClosing: 'after-props',
+        nonEmpty: 'line-aligned'
+    }],
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     'react/jsx-curly-spacing': 'off',
     // Enforce event handler naming conventions in JSX
